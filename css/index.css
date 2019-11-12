@@ -1,0 +1,117 @@
+body{
+	/*ici background */
+	background-color: #191f16/* pour zoe #111111 */ ;
+}
+.content-box.index{
+	background-color: #191f16;
+}
+.index-actu-container{
+	background-color:rgba(0,0,0,0.2);
+
+}
+.item-actu{
+	background-color: #e9eaec ;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+.container-img-actu{
+	width:100%;
+}
+.container-img-actu img{
+	width:100%;
+}
+.item-actu h2{
+	font-family: 'Quintessential', cursive;
+	line-height: 1.5 ;
+	font-size: 24px ;
+	padding: 10px ;
+	color: #257372;
+	text-align:center ;
+}
+.item-actu p{
+	font-size:15px;
+	line-height: 1.2 ;
+	padding: 10px ;
+}
+.container-index-actu-link{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+
+}
+.container-index-actu-link a{
+	text-decoration:none;
+	color:#257372;
+	
+}
+.index-actu-link{
+	margin:10px;
+	margin-top: 15px;	
+	padding: 5px 10px;
+	font-size: 20px ;
+	font-weight: 300 ;
+	line-height: 1.5 ;
+	border:1px solid #257372;
+	font-family: 'Quintessential', cursive;
+	transition:all 650ms ;
+}
+.index-actu-link:hover{
+	color: #e9eaec ;
+	border:1px solid #e9eaec;
+	background-color:#257372;
+}
+/*start animations*/
+/*end animations*/
+
+/*media queries*/
+@media screen and (min-width:550px){
+	
+	.item-actu{
+		width:95%;
+		margin:0 auto ;
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
+	.item-actu p{
+		font-size:18px;
+	}
+	.item-actu h2{
+		padding: 15px ;
+	}
+}
+@media screen and (min-width:789px){
+	.index-actu-container{
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		/*z-index: 2 ;*/
+	}
+	.item-actu{
+		width:49%;
+	}
+	.item-actu h2{
+		padding: 10px ;
+	}
+}
+@media screen and (min-width: 1187px){
+	/*ici background */
+	.index-background-url{
+		background-image:url("https://s.ankama.com/www/static.ankama.com/ankama/cms/images/293/2019/09/23/1054095.jpg");
+		/*background-image:url("../img/zoe.jpg");*/
+		background-repeat: 	no-repeat;
+		background-position-x: center;
+	}
+	/*ici background */
+	.container-body{
+		border:2px solid #191f16;
+	}
+	.red{
+		height:150px;
+		width:100%;
+		background-color: pink;
+	}
+	.item-actu{
+		width:32%;
+	}
+	
+}

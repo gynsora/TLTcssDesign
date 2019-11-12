@@ -1,0 +1,196 @@
+body{
+	/*ici background */
+	background-color: #111111/*#191f16/* pour zoe #111111 */ ;
+}
+.content-box.story{
+	background-color: #111111;
+	color:white;
+}
+.story-box{
+	padding:20px;
+	padding-top: 50px ;
+	padding-bottom: 50px;	
+}
+.story-box h1{
+	color:#937341 ;
+	margin-bottom: 50px;
+	font-family: 'Quintessential', cursive;
+}
+.story-box-paragraph {
+	font-size: 20px;
+	line-height: 1.5 ;
+	color:#fff	;
+}
+.story-box h1{
+	text-align: center ;
+}
+.story-classes-box{
+	padding-bottom: 20px;
+}
+.story-classes-show{
+	text-align: center;
+	padding-bottom: 60px;
+}
+.story-classes-show.guardian{
+	color: #1f7ebc ;
+}
+.story-classes-show.sorcerer{
+	background-color:rgba(52, 36, 59,0.8);
+	color: #f6a242 ;
+}
+.story-classes-show.archer{
+	color: green ;
+}
+.story-classes-show h2{
+	text-align: center;
+	font-size: 35px ;
+	font-family: 'Quintessential', cursive;
+	padding-top: 15px;
+}
+.story-classes-mobile-image{
+	text-align: center;
+	padding-top: 15px;
+}
+.story-laptop-image{
+	display: none;
+}
+.story-classes-show p{
+	padding:28px;
+	padding-top: 15px;
+	font-size: 20px ;
+	line-height: 1.5 ;
+	text-align: left;
+	font-family: 'Quintessential', cursive;
+}
+.story-classes-link{
+	text-align: center ;	
+	height: 38px ;
+	padding :15px;
+	padding-top :10px;
+	border-radius: 5px;	
+	text-decoration: none;
+	font-family: 'Quintessential', cursive;
+	font-size: 20px;
+}
+.story-classes-link.guardian{
+	background-color: #1f7ebc ;	
+	color:#fff;
+	transition:all 450ms ;
+}
+.story-classes-link.guardian:hover{
+	background-color:#111111  ;	
+	color: #1f7ebc ;
+	border:1px solid #1f7ebc;
+}
+.story-classes-link.sorcerer{
+	background-color: #f6a242 ;	
+	color:#34243b;
+	transition:all 450ms ;
+}
+.story-classes-link.sorcerer:hover{
+	background-color:#34243b  ;	
+	color: #f6a242;
+	border:1px solid  #f6a242;
+}
+.story-classes-link.archer{
+	background-color:green;	
+	color:#fff;
+	transition:all 450ms ;
+}
+.story-classes-link.archer:hover{
+	background-color: #111111;	
+	color:green;
+	border:1px solid green;
+}
+
+/*start animations*/
+
+/*end animations*/
+
+/*media queries*/
+
+@media screen and (min-width:789px){
+	.story-box{
+		padding-top: 60px ;
+		padding-bottom: 80px;	
+	}
+	.story-box-paragraph {
+		padding:30px 15%;
+		border: 1px solid #c3a758 ;
+		background-color: rgba(25,28,33,.5);
+	}
+	.story-classes-show p{		
+		padding-top: 15px;
+		padding-left: 20%;
+		padding-right: 20%;
+		line-height: 1.5 ;
+		text-align: center;
+	}
+	
+}
+@media screen and (min-width: 1187px){
+	.story-background-url{
+		/*ici background */
+		/*background-image:url("https://s.ankama.com/www/static.ankama.com/ankama/cms/images/293/2019/09/23/1054095.jpg");
+		background-image:url("../img/oeuf.png");*/
+		background-image:url("../img/zoe.jpg");
+		background-repeat: 	no-repeat;
+		background-position-x: center;
+	}
+	/*ici background */
+	.container-body{
+		border:2px solid #111111;
+	}
+	.story-box{
+		padding:10%;
+		padding-top: 60px ;
+		padding-bottom: 80px;	
+	}
+	.story-box-paragraph {
+		padding:5%;
+	}
+	.red{
+		height:150px;
+		width:100%;
+		background-color: pink;
+	}
+	.story-classes-box{
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		z-index: 2 ;
+	}
+	.story-classes-mobile-image{
+		display: none;
+	}
+	.story-laptop-image{
+		display: block;
+		width:90%;
+		margin:0 auto;
+		opacity: .5;
+	}
+	.story-laptop-image img{
+		width:80%;
+	}
+	.story-classes-show{
+		width:32%;
+	}
+	.story-classes-show h2{
+		font-size: 28px ;
+	}
+	.story-classes-show p{
+		padding:28px;
+		padding-top: 15px;
+		line-height: 1.5 ;
+		text-align: left;
+	}
+	.story-classes-link{
+		opacity:.5;
+	}
+	.story-classes-show:hover .story-laptop-image{
+		opacity:1;
+	}
+	.story-classes-show:hover .story-classes-link{
+		opacity:1;
+	}
+}
