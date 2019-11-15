@@ -1,0 +1,94 @@
+body{
+	/*ici background */
+	background-color: #000;
+}
+.story-box{
+	padding:20px;
+	padding-top: 50px ;
+	padding-bottom: 50px;
+	background-color: #000;	
+}
+
+.content-box {
+	min-height: 850px;
+}
+.spirits-container{
+	min-height: 850px;
+	background-color:#e9eaec ;
+}
+.spirits-container h1{
+	color:#257372 ;
+	font-size: 30px;
+	padding-top:30px ;
+	margin-bottom: 50px;
+	font-family: 'Quintessential', cursive;
+	text-align: center;
+}
+.spirits-box{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width:99%;
+	margin: 0 auto;
+}
+.spirits-item{
+	width:49%;
+	text-align: center;
+}
+.spirits-item img{
+	width:80%;
+}
+.spirits-link a{
+	text-decoration: none;
+	font-size:20px ;
+	color:#257372 ;
+}
+/*start animations*/
+
+/*end animations*/
+
+/*media queries*/
+@media screen and (min-width:510px){
+	.spirits-item{
+		width:32%;
+	}
+	
+}
+@media screen and (min-width:789px){
+	.story-box{
+		padding-top: 60px ;
+        padding-bottom: 50px;	
+	}
+	.spirits-box{
+		width:80%;
+	}
+	.spirits-item{
+		width:24%;
+	}
+	.spirits-container h1{
+		font-size: 40px;
+		padding-top: 60px;
+		margin-bottom: 50px;
+	}
+}
+@media screen and (min-width: 1187px){
+	.spirits-background-url{
+        /*ici background */        
+		background-image:url("../img/osamodas.jpg");
+		background-repeat: 	no-repeat;
+		background-position-x: center;
+		z-index: 2;
+	}
+	/*ici background */
+	.container-body{
+		border:2px solid #000;
+	}
+	.spirits-box{
+		width: 70%;
+	}
+	.spirits-item{
+		width:15%;
+	}
+	
+
+}

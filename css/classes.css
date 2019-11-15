@@ -1,0 +1,44 @@
+body{
+	/*ici background */
+	background-color: #000;
+}
+.content-box.classes{
+    background-color: #000;
+    min-height: 850px;
+    color:white;
+}
+.content-box.classes h1{
+    color: red;
+    font-family: 'Quintessential', cursive;
+    text-align: center;
+}
+
+
+/*start animations*/
+
+/*end animations*/
+
+/*media queries*/
+
+@media screen and (min-width:789px){
+	.story-box{
+		padding-top: 60px ;
+        padding-bottom: 50px;	
+	}
+	
+}
+@media screen and (min-width: 1187px){
+	.classes-background-url{
+        /*ici background */        
+		background-image:url("../img/oeuf.png");
+		background-repeat: 	no-repeat;
+        background-position-x: center;
+	}
+	/*ici background */
+	.container-body{
+        border:2px solid #000;
+    }
+    
+	
+
+}

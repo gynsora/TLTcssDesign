@@ -4,6 +4,7 @@ body{
 }
 .content-box.index{
 	background-color: #191f16;
+	min-height: 850px;
 }
 .index-actu-container{
 	background-color:rgba(0,0,0,0.2);

@@ -18,6 +18,7 @@ body{
 	width:100%;
 	/*border:2px solid red;*/
 	min-height: 250px;
+	
 }
 .content-box{
 	width:100%;
@@ -227,7 +228,7 @@ footer{
 		border:2px solid #191f16;
 		width:100%;
 		margin:0 auto;
-		min-height: 1100px;	
+		min-height: 900px;	
 		z-index:0;
 	}
 	

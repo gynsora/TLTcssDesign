@@ -1,0 +1,62 @@
+body{
+	/*ici background */
+	background-color: #000;
+}
+.content-box.article{
+    background-color: #000;
+    min-height: 850px;
+    color:white;
+}
+.article-container{
+    background-color: #e9eaec ;   
+    min-height: 900px;
+    padding:15px;
+    color: #000;
+    font-size: 18px;
+    margin:auto;
+}
+.article-container h1{
+    color: #257372;
+    text-align:center ;
+    font-family: 'Quintessential', cursive;
+	line-height: 1.5 ;
+}
+.article-intro{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+
+/*start animations*/
+
+/*end animations*/
+
+/*media queries*/
+
+@media screen and (min-width:789px){
+	.story-box{
+		padding-top: 60px ;
+        padding-bottom: 50px;	
+	}
+    .article-container{
+        padding:5%;
+    }
+	
+}
+@media screen and (min-width: 1187px){
+	.article-background-url{
+        /*ici background */        
+		background-image:url("../img/oeuf.png");
+		background-repeat: 	no-repeat;
+        background-position-x: center;
+	}
+	/*ici background */
+	.container-body{
+        border:2px solid #000;
+    }
+    .article-container{
+        padding:5% 7%;
+    }
+	
+
+}
