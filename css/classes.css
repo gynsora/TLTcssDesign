@@ -2,32 +2,103 @@ body{
 	/*ici background */
 	background-color: #000;
 }
-.content-box.classes{
-    background-color: #000;
-    min-height: 850px;
-    color:white;
+
+.classes-container{
+	min-height: 450px;
+	padding-top: 61px;
+	z-index:0;
+	position: relative;
 }
-.content-box.classes h1{
+#classes-container{	
+	background-image:url("../img/website/backgroundClasses/berserker.jpg");
+	background-repeat: 	no-repeat;
+	background-position-x: center;
+}
+/*
+.classes-container h1{
     color: red;
     font-family: 'Quintessential', cursive;
     text-align: center;
+}*/
+.classes-nav-tab{
+	/*background-color:purple;*/
+	width:90%;	
+	margin: 0 auto ;
+	padding-top: 10px;
+	display: flex ;
+	flex-wrap: wrap ;
+	justify-content: center ;
+}
+.classe-nav-link{
+	width:32%;
+	margin:5px 2px;
+	cursor: pointer ;
+	opacity: .5;
+}
+.classe-nav-link.activated , .classe-nav-link:hover{
+	opacity: 1 ;
+}
+.classe-nav-link img{
+	width:100%;
+}
+.classe-box{
+	padding-top: 60px;
+	min-height:500px;
+	display: none;
+}
+.classe-box.activated{
+	display: block;
+}
+#berserker{
+	background-color: rgba(246, 44, 17,0.2) ;
+}
+#guardian{
+	background-color: rgba(22, 147, 229,0.2);
+}
+#sorcier{
+	background-color: rgba(245, 242, 2,0.2)
 }
 
-
 /*start animations*/
+
 
 /*end animations*/
 
 /*media queries*/
+@media screen and (min-width:610px){
+	.classes-nav-tab{
+		width:80%;
+		padding-top: 30px;
+	}
 
+	.classe-nav-link{
+		width:24%;
+		margin:5px 2px;
+	}
+	
+}
 @media screen and (min-width:789px){
 	.story-box{
 		padding-top: 60px ;
         padding-bottom: 50px;	
 	}
+	.classes-nav-tab{
+		width:700px;
+		padding-top: 50px;
+		margin:0 auto;
+	}
+	.classe-nav-link{
+		width:110px;
+		margin:5px 2px;
+	}
 	
 }
 @media screen and (min-width: 1187px){
+	.classes-nav-tab{
+		width:700px;
+		padding-top: 50px;
+		margin:0 auto;
+	}
 	.classes-background-url{
         /*ici background */        
 		background-image:url("../img/oeuf.png");

@@ -34,7 +34,7 @@ body{
 .story-classes-show.guardian{
 	color: #1f7ebc ;
 }
-.story-classes-show.sorcerer{
+.story-classes-show.sorcier{
 	background-color:rgba(52, 36, 59,0.8);
 	color: #f6a242 ;
 }
@@ -82,12 +82,12 @@ body{
 	color: #1f7ebc ;
 	border:1px solid #1f7ebc;
 }
-.story-classes-link.sorcerer{
+.story-classes-link.sorcier{
 	background-color: #f6a242 ;	
 	color:#34243b;
 	transition:all 450ms ;
 }
-.story-classes-link.sorcerer:hover{
+.story-classes-link.sorcier:hover{
 	background-color:#34243b  ;	
 	color: #f6a242;
 	border:1px solid  #f6a242;

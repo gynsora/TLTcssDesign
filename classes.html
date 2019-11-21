@@ -53,18 +53,27 @@
 			</div>	
 		</nav>
 	</header>
-	<section class="head-background-mobile">
-		<img src="https://s.ankama.com/www/static.ankama.com/ankama/cms/images/295/2019/09/23/1054097.jpg">
-	</section>
-	<section class="head-background-tablet">
-		<img src="https://s.ankama.com/www/static.ankama.com/ankama/cms/images/296/2019/09/23/1054096.jpg">
-	</section>
 	
-	<div class="container-body classes-background-url">
-		<div class="content-box classes">
-			<h1>classes en mode krosmaga god</h1>
-		
+	
+	<div class="classes-container" id="classes-container">
+		<div class="classes-nav-tab">
+			<div class="classe-nav-link activated" data-name="berserker"><a href="#berserker" class="classe-nav-link-href"><img src="img/website/nav-berserker.png" alt="lien affichant de la classe berserker"></a></div>
+			<div class="classe-nav-link" data-name="guardian"><a href="#guardian" class="classe-nav-link-href"><img src="img/website/nav-guardian.png" alt="lien affichant de la classe Guardian"></a></div>
+			<div class="classe-nav-link"  data-name="sorcier"><a href="#sorcier" class="classe-nav-link-href"><img src="img/website/nav-sorcier.png" alt="lien affichant de la classe Guardian"></a></div>
         </div>
+        <section id="berserker" class="classe-box activated ">
+        	<h2>berserker</h2>
+        </section>
+        <section id="guardian" class="classe-box ">
+        	<h2>guardian</h2>
+        </section>
+        <section id="sorcier" class="classe-box ">
+        	<h2>sorcier</h2>
+        </section>
+        
+        <!--section id="oracle"></section>
+        <section id="archer"></section>
+        <section id="assasin"></section-->
        
     </div>
 	<div class="test">
@@ -76,5 +85,63 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>	
 	<script src="js/anim.js"></script>
+	<script type="text/javascript">
+		$( document ).ready(function() {			
+			
+			let backgroundClasseContainer = document.getElementById("classes-container");
+			let currentClass = location.hash.substr(1);			
+			onChangeClasse(currentClass);
+
+			let classesNavLinks =document.getElementsByClassName('classe-nav-link-href') ;
+			    //console.log(classesNavLinks);
+			    for (let navClasse of classesNavLinks) {
+				    navClasse.addEventListener("click", onclickChangeClasse);
+				}
+
+			function onclickChangeClasse(e){
+				e.preventDefault();
+				currentClass = this.getAttribute("href").substr(1);				
+				onChangeClasse(currentClass);
+				location.hash = "" ;
+			}
+
+			function onChangeClasse(currentClass){
+				let sectionSelected = document.getElementById(currentClass);
+				if( sectionSelected != null){
+					let classesNavLinks = document.getElementsByClassName("classe-nav-link") ;
+			    	for (let navClasse of classesNavLinks) {
+					    navClasse.classList.remove("activated");				    				    
+					    if(navClasse.getAttribute("data-name") === currentClass){				    	
+					    	navClasse.classList.add("activated");
+					    }
+					}
+					//affichage des données  des section en fonction de leur id et du data-name
+			    	let classesBoxes = document.getElementsByClassName("classe-box");
+			    	for (let classeBox of classesBoxes) {
+					    classeBox.classList.remove("activated");
+					    if(classeBox.getAttribute("id") === currentClass){
+					    	classeBox.classList.add("activated");
+					    }
+					}
+					//changement de # pour remonter l'affichage su le container plutot que sur la classe box
+					
+					location.hash = "classes-container";
+					location.hash = "";
+
+					//changement du background lors du changement de classe					
+					backgroundClasseContainer.style.backgroundImage = "url('img/website/backgroundClasses/"+currentClass+".jpg')";
+					
+					
+				}
+				
+				
+
+			}
+
+
+		});
+
+
+	</script>
 </body>
 </html>
